@@ -1,6 +1,7 @@
 * {
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 }
 
 body{
@@ -8,7 +9,7 @@ body{
     width:100%;
     height: 100%;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    
 }
 
 .container{
@@ -26,9 +27,9 @@ body{
 
 /*Estilo de la navbar*/
 .navbar{
-    padding: 3em;
+    padding: 1em;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width:100%;
 }
@@ -37,8 +38,11 @@ body{
 
 #logoNav{
     order:1;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    left: 3em;
+    align-items: flex-start;
+    width: 50%;
+    height: 50;
 }
 
 /*Contenedor del logo de hamburguesa*/
@@ -47,8 +51,8 @@ body{
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    left:3em;
-    top:3em;
+    left:1em;
+    top:1em;
 }
 
 /*Dándole estilo a las barras para crear el logo de la hamburguesa*/
@@ -75,21 +79,72 @@ body{
     width:100%;
 }
 
-/*Estilos HERO*/
+/***************************Estilos HERO********************************/
 
+/* Estilo de la sección HERO. Se pone la imagen de fondo con tamaño cover */
 .hero{
+    display:flex;
     background-image: url(../img/taxi.jpg);
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 100vh;
     order:3;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.taxi{
-    width:100%;
+/*Estilo de la cajita amarilla con texto y botón*/
+.contenidoHero{
+    display:flex;
+    flex-direction: column;
+    background-color: #f7b617;
+    position: relative;
+    height: 30%;
+    width: 80%;
+    color:white;
+    justify-content: center;
+    padding: 10%;
+}
+
+/*Estilo del logo que va dentro de la cajita amarilla*/
+.logoBlanco{
+    width: 30%;
+}
+
+/****************INFORMACION**************************************/
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    order:4;
+    background-color: #f7b617;
+    padding: 1em;
+    align-content: center;
+    align-items: center;
+    color:white;
+    padding-top: 2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-bottom: 3em;
+
+}
+
+.cajaInformacion{
+    display: flex;
+    flex-direction: column;
+    border: white solid;
+    width: 80%;
     height: auto;
+ 
+    align-items: 
+
+}
+
+.imgCel{
+    width: 70%;
 }
 
 footer{
     order:9
 }
+
