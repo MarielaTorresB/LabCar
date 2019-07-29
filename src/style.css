@@ -1,0 +1,150 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    width:100%;
+    height: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+/*Clase hidden: clase oculta*/
+.hidden{
+    display: none;
+}
+
+ /******************************************ESTILOS DE LA NAVBAR*************************************/
+
+
+/*Estilo de la navbar*/
+.navbar{
+    padding: 1em;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+/*Estilo a logoNav= logo de Labcar*/
+
+#logoNav{
+    order:1;
+    position: relative;
+    left: 3em;
+    align-items: flex-start;
+    width: 50%;
+    height: 50;
+}
+
+/*Contenedor del logo de hamburguesa*/
+.logo-container{
+    order:0;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left:1em;
+    top:1em;
+}
+
+/*Dándole estilo a las barras para crear el logo de la hamburguesa*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/*Estilo de los links del menú*/
+.navbar a {
+    display:block;
+    color:black;
+    text-decoration: none;
+    position:relative;
+    font-size: 17px;
+    padding: 3em;
+}
+
+.dropdown-content{
+    order:2;
+    width:100%;
+}
+
+/***************************Estilos HERO********************************/
+
+/* Estilo de la sección HERO. Se pone la imagen de fondo con tamaño cover */
+.hero{
+    display:flex;
+    background-image: url(../img/taxi.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    order:3;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*Estilo de la cajita amarilla con texto y botón*/
+.contenidoHero{
+    display:flex;
+    flex-direction: column;
+    background-color: #f7b617;
+    position: relative;
+    height: 30%;
+    width: 80%;
+    color:white;
+    justify-content: center;
+    padding: 10%;
+}
+
+/*Estilo del logo que va dentro de la cajita amarilla*/
+.logoBlanco{
+    width: 30%;
+}
+
+/****************INFORMACION**************************************/
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    order:4;
+    background-color: #f7b617;
+    padding: 1em;
+    align-content: center;
+    align-items: center;
+    color:white;
+    padding-top: 2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-bottom: 3em;
+
+}
+
+.cajaInformacion{
+    display: flex;
+    flex-direction: column;
+    border: white solid;
+    width: 80%;
+    height: auto;
+ 
+    align-items: 
+
+}
+
+.imgCel{
+    width: 70%;
+}
+
+footer{
+    order:9
+}
+
