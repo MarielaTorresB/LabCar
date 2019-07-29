@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Labcar</title>
     <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="../iconos/style.css">--> 
 </head>
 <body>
     <!--Navbar-->
@@ -47,13 +48,77 @@
         </div>
         <p>Llega a tu destino aún más rápido</p>
     </div>
+<!--Conduce-->
+    <div class="conduce">
+        <div class="contenidoConduce">
+            <div class="textoConduce">
+                <p><strong>Conduce cuando quieras</strong><br>LabCar es una opción flexible para alcanzar tus metas<br>financieras</p>
+            </div class="botonConduce">
+            <button>Conviértete en conductor</button>
+        </div>
+    </div>
+<!--Tarifa-->
+    <div class="tarifa">
+        <div class="tarifaTexto">
+            <p><strong>Tarifas</strong><br>Consulta las tarifas de LabCar aquí</p>
+        </div>
+        <div class="inputOrigen">
+            <span><img src="../img/circulo.png"> <input placeholder="Ingrese su punto de partida"></span>
+        </div>
+        <div class="inputDestino">
+            <span><img src="../img/flecha.png"> <input placeholder="Ingrese su destino"></span>
+        </div>
+        <div class="botonTarifa">
+            <button>¡TRAZAR RUTA!</button>
+        </div>
+        <div clas="mapa">
+            <div id="map"></div>
+        </div>
+    </div>
+
 <!--Footer-->
-    
+
     <footer>
-        <p>Aqui termina</p>
+        <figure class="logoFooter">
+            <img src="../img/logo-blanco.png">
+        </figure>
+        <div  class="footerCont">
+            <div class="bloque1">
+                <ul>
+                    <a href="#">Viaja</a>
+                    <a href="#">Conduce</a>
+                    <a href="#">Ciudades</a>
+                    <a href="#">Tarifas</a>
+                    <a href="#">Entregas</a>
+                    <a href="#">Cómo funciona?</a>
+                    <a href="#">Paises</a>
+                    <a href="#">Seguridad</a>
+                </ul>
+            </div>
+            <div class="iconos">
+                <i class="icon-facebook"></i>
+                <i class="icon-twitter"></i>
+                <i class="icon-linkedin2"></i>
+                <i class="icon-appleinc"></i>
+                <i class="icon-play3"></i>
+            </div>
+            <div class=tiendas>
+                <figure>
+                    <img src="../img/google-play.png">
+                    <img src="../img/app-store.png">
+                </figure>
+            </div>
+        </div>
+        <div class="nombre">
+            <p>© 2017 LabCar technologies Inc.</p>
+        </div>
     </footer>
     
 
     <script src="main.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    </script>
+
 </body>
 </html>
